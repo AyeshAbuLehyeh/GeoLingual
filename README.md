@@ -8,7 +8,7 @@ The pipeline uses a general vision-language model, with no training, to turn gro
 
 - Python 3.12, one NVIDIA GPU with enough memory for the 30B bf16 model (we used NVIDIA H200), CUDA 12.x.
 - The VIGOR dataset (Zhu et al., CVPR 2021), obtained from the official repository at https://github.com/Jeff-Zilence/VIGOR under its own license. Set `VIGOR_ROOT` to its root directory.
-- For the vision-retrieval step: the AuxGeo checkpoint `vigor_same/convnext_base/1216225004/weights_e40_80.4258.pth` from the AuxGeo/DReSS code repository (TODO: add link). Set `DRESS_ROOT` to that repository's root.
+- For the vision-retrieval step: the AuxGeo checkpoint `vigor_same/convnext_base/1216225004/weights_e40_80.4258.pth` from the AuxGeo/DReSS code repository (https://github.com/summerpanking/dress). Set `DRESS_ROOT` to that root directory.
 - The release archive `descriptions.tar.gz` (attached to the GitHub release). It contains the 19,536 VLM-generated descriptions, so you can skip the GPU generation step.
 
 ## Setup
