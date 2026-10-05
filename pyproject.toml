@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "geolingual"
+version = "1.0.0"
+description = "Zero-shot language reasoning for cross-view geo-localization (VIGOR)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "torch>=2.8", "transformers==4.57.2", "accelerate>=1.0", "timm==1.0.29",
+  "albumentations>=2.0", "opencv-python-headless>=4.9",
+  "sentence-transformers>=5.1", "scikit-learn>=1.5", "scipy>=1.13",
+  "pandas>=2.2", "numpy>=2.0", "matplotlib>=3.9", "nltk>=3.9",
+  "tqdm>=4.66", "pillow>=10.0", "requests>=2.31",
+]
+
+[tool.setuptools.packages.find]
+include = ["geolingual*"]
