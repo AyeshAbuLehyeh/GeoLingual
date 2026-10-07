@@ -1,6 +1,6 @@
 # What Words Keep of a Place: Zero-Shot Language Reasoning for Cross-View Geo-Localization
 
-Code, prompts, data splits, and figures for the paper *What Words Keep of a Place: Zero-Shot Language Reasoning for Cross-View Geo-Localization*, accepted to the NeurIPS 2026 Workshop on Physical World AI.
+Code, prompts, data splits, and figures for the paper [*What Words Keep of a Place: Zero-Shot Language Reasoning for Cross-View Geo-Localization*](https://arxiv.org/abs/2610.07269), accepted to the NeurIPS 2026 Workshop on Physical World AI.
 
 The pipeline uses a general vision-language model, with no training, to turn ground panoramas and satellite tiles into structured text. We then test that text for cross-view matching: as an embedding retrieval target, as an LLM judge over geo-nearest hard negatives, and as a reranker of a vision retriever's top-10.
 
@@ -103,11 +103,11 @@ To regenerate the descriptions from scratch instead of using the archive, run `s
 ## Citation
 
 ```bibtex
-@inproceedings{abulehyeh2026words,
-  title     = {What Words Keep of a Place: Zero-Shot Language Reasoning for Cross-View Geo-Localization},
-  author    = {Abu Lehyeh, Ayesh and Jung, Jay Hwasung},
-  booktitle = {NeurIPS 2026 Workshop on Physical World AI},
-  year      = {2026}
+@article{geolingual,
+  author  = {Lehyeh, Ayesh Abu and Hwasung Jung, Jay and Wshah, Safwan},
+  title   = {What Words Keep of a Place: Zero-Shot Language Reasoning for Cross-View Geo-Localization},
+  journal = {arXiv preprint arXiv:2610.07269},
+  year    = {2026}
 }
 ```
 
